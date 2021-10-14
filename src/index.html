@@ -1,14 +1,113 @@
 <!DOCTYPE html>
 <html>
+  <!-- La cabecera del proyecto -->
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" >
     <title>Tarjeta de crédito válida</title>
+    <!-- Enlace a la hoja de estilos -->
     <link rel="stylesheet" href="style.css" />
+    <!-- enlaces relacionados con la fuente descargada de Google -->
+    <link rel="preconnect" href="https://fonts.
+    googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
   </head>
+  <!-- El cuerpo del proyecto -->
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+  <!-- Cabecera donde va el navegador -->
+    <header class="header">
+      <div class="logo_nav_container">
+       <a href="href=#" class="logo">Logo de Ransa Perú</a>
+       <!-- El navegador -->
+       <nav class="enlaces_de_navegacion">
+         <ul>
+            <li><a href="#" >Inicio</a></li>
+            <li><a href="index.html" >Validación de tarjeta</a></li>
+         </ul> 
+       </nav>
+      </div>
+    </header>
+    <!-- Título del registro del formulario -->
+    <section id="registro_de_formulario" class="registro_de_formulario">
+      
+       <h1>Bienvenid@ a la tienda online Ransa Perú</h1>
+ 
+       <!-- Formulario de ingreso de datos -->
+         
+         <!-- <div class="flexbox">
+
+            <div class="grupoexpira">
+              
+              <div class="flexbox">
+                <div class="grupo-select">
+                  <!-- Código MM  -->
+                  <!-- <label for="mm">MM</label><br><br>
+
+                     <div class="grupo">
+                         <select name="mes" class ="ingreso_datos" id="selectMes">
+
+                              <option disabled selected>Mes</option>
+                         </select>
+                     </div>
+                </div>
+                <div class="grupo-select">
+                  <!-- Código año  -->
+                  <!-- <label for="anio">Año</label><br><br>
+
+                  <div class="grupo">
+                         <select name="anio" class="ingreso_datos" id="selectAnio">
+                                                
+                        <option disabled selected >Año</option>
+                      </select>
+                  </div>
+                </div>
+              </div> -->
+                <!-- Código CVV  -->
+
+                <!-- <div class="grupo" >
+                    <label for="cvv">CVV</label><br><br>
+                    <input class ="ingreso_datos" type="text" id="cvv" name="cvv" maxlength="3" placeholder="CVV"><br><br>
+                </div>
+               -->
+            <!-- </div> -->
+            
+         <!-- </div>  --> 
+         
+         <!-- Numero de Tarjeta -->
+          <div class="grupo_contenido_formulario">
+            <div class="grupo">
+              <label for="nombre_usuario">Usuario</label><br><br>
+              <input class="ingreso_datos" type="text" id="nombre_usuario" maxlength="19" name="nombre_usuario"   placeholder="Usuario"><br><br>
+            </div>
+
+            <div class="grupo">
+              <label for="numero_tarjeta">Número de Tarjeta</label><br><br>
+              <input class="ingreso_datos" type="text" id="numero_tarjeta" maxlength ="16" autocomplete="off" name="numero_tarjeta" placeholder="Número de tarjeta"><br><br>
+            </div>
+
+            <!-- Botón de ingresar y validar datos -->        
+            <input  type="submit" id="validation_button" class="validation_button" value="Validar"><br><br>
+         
+          </div>
+    </section >
+  
+    <div class="overlay" id="overlay">
+      <div class="mostrar_validacion" id="mostrar_validacion">
+        <p id ="validacion">Validando..</p>
+        <input id="cerrar_con_btn_ok" type="sybmit" class="btn-submit" value="OK">        
+      </div>      
+    </div>
+     
+   <!-- Pie de página -->
+    <footer>
+      <!-- dirección de la empresa -->
+      <address>
+        <p>© 2021 Tienda Ransa | Todos los derechos reservados. Sede Central, Av.Oscar Benavides, Lima, Perú.</p>
+      </address>
+    </footer>
+    <!-- enlace al script index.js -->
     <script src="index.js" type="module"></script>
   </body>
 </html>

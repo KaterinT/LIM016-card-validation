@@ -1,0 +1,181 @@
+
+body {
+
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background: url(fondo_pagina_web.jpg) center top 4.5em;
+    background-size: 100%;
+    /* No se repita la imagen  */
+    background-repeat: no-repeat;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+
+header {
+    background: #173f9c;
+    color: #ffffff;
+    padding: 1.4em ;
+
+
+}
+
+.header a {
+    color: #00c3ff;
+    text-decoration: none;
+}
+
+.logo_nav_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.enlaces_de_navegacion ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.enlaces_de_navegacion ul li {
+    display: inline-block;
+}
+
+.enlaces_de_navegacion ul li a {
+    display: block;
+    padding: 0.3em;
+    transition: all 3em
+
+}
+
+.enlaces_de_navegacion ul li a:hover {
+    background-color: #a7c8ee;
+
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 1.3em;
+}
+
+#registro_de_formulario {
+
+    background: #ffffff;
+    width: 18em;
+    padding: 2em;
+    /* margin:auto; */
+    margin-top: 1.7em;
+    margin-right: 30%;
+    margin-left: 64%;
+    text-align: left;
+    border-radius: 0.6em;
+    box-shadow: 0 0 20px rgb(71, 68, 255);
+    
+
+}
+
+.registro_de_formulario label {
+    color:blue;
+    font-size: 1.1em;
+}
+
+.registro_de_formulario input,
+.registro_de_formulario select
+ {
+    border:2px solid #c5c8e9;
+    font-size:18 em;
+    height:40px;
+    /* width:100%; */
+    width: 270px;
+    padding:5px 12 px;
+    transition:.3s ease all;
+    border-radius:5px;
+}
+
+.ingreso_datos {
+   
+    max-width: 298px;
+    background:#c5c8e9;
+    font-size: 0.9em;
+    padding: 0.2em;
+    border-radius: 0.4em;
+    color: #000000;
+    box-shadow: 0 0 8em rgb(72, 172, 238);
+
+}
+
+.estilo-button {
+    border-radius: 0.3em;
+    background:#f7f8fa;
+    font-size: 0.9em;
+    margin-top: 1em;
+    padding: 0.5em;
+}
+
+.validation_button {
+    width: 100%;
+    max-width: 170px;
+    margin: 0 20px 0 20px;
+}
+.validation_button:hover {
+    cursor: pointer;
+}
+
+/* -----popUp para la ventana emergente de la validacion */
+.overlay {
+    background: rgba(0,0,0,.3);
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    visibility:hidden;
+}
+
+.overlay.active {
+    visibility:visible;
+
+}
+
+.mostrar_validacion {
+    background: #ffffff;
+    box-shadow:0px 0px 5px 0px rgba(0,0, 0,0.3);
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    width: 270px;
+
+}
+
+.btn-submit {
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    color: #fff;
+    background: #5e6786;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
+    text-align: center;
+}
+
+.btn-submit:hover {
+    background: black;
+}
+
+
+.grupo_contenido_formulario {
+    width: 298px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
