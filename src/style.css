@@ -1,10 +1,12 @@
-
-body {
-
+*{
     margin:0;
     padding:0;
+}
+
+/* ------------FONDO Y TEXTO DE TODO EL FORMULARIO ---------------- */
+body {
     box-sizing: border-box;
-    background: url(fondo_pagina_web.jpg) center top 4.5em;
+    background: url(fondo_pagina_web.jpg) center top 50px;
     background-size: 100%;
     /* No se repita la imagen  */
     background-repeat: no-repeat;
@@ -12,115 +14,136 @@ body {
 
 }
 
+/* -----------COLOR DE CABECERA Y PADDING--------- */
 header {
     background: #173f9c;
-    color: #ffffff;
-    padding: 1.4em ;
-
-
+    padding: 20px ;
 }
 
+/* ----- LETRAS DE CABECERA---- */
 .header a {
     color: #00c3ff;
     text-decoration: none;
 }
 
+/* ---------POSICIÓN DE BOTONES DE LA CABECERA------ */
 .logo_nav_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 }
-
+/* ----Quita el estilo tipo lista  ----*/
 .enlaces_de_navegacion ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
 
 }
-
+/* ---colocar un boton uno al lado del otro --- */
 .enlaces_de_navegacion ul li {
     display: inline-block;
+
 }
 
+/* ---estilo al seleccionar uno de los botones--- */
 .enlaces_de_navegacion ul li a {
-    display: block;
-    padding: 0.3em;
-    transition: all 3em
 
-}
+    border-radius: 3px;
+    padding: 9px;
+
+  }
 
 .enlaces_de_navegacion ul li a:hover {
-    background-color: #a7c8ee;
+    background-color: #477ebd;
 
 }
+
+
+/* ---------ESTILOS DEL FORMULARIO------ */
 
 h1 {
-    font-size: 1.5em;
-    margin-bottom: 1.3em;
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #173f9c;
+    
 }
-
+/* -------- caja que cubre todo el formulario--------- */
 #registro_de_formulario {
-
+    
     background: #ffffff;
-    width: 18em;
-    padding: 2em;
+    width: 21.5%;
+    padding: 2.8em;
     /* margin:auto; */
-    margin-top: 1.7em;
+    /* margin: 20px 0px 30px 550px; */
+    margin: 4% 0% 6% 64%;
+    /* margin-top: 1.7em;
     margin-right: 30%;
-    margin-left: 64%;
+    margin-left: 64%; */
     text-align: left;
     border-radius: 0.6em;
-    box-shadow: 0 0 20px rgb(71, 68, 255);
+    box-shadow: 0 0 20em rgb(42, 78, 175);
     
 
 }
+/* ------caja de los elementos del formulario------ */
+.grupo_contenido_formulario {
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
+    
+}
+/* -------titulo de los inputs el label------- */
 .registro_de_formulario label {
-    color:blue;
+    color:#173f9c;
     font-size: 1.1em;
+    font-weight: 610;
 }
-
-.registro_de_formulario input,
-.registro_de_formulario select
- {
-    border:2px solid #c5c8e9;
-    font-size:18 em;
-    height:40px;
-    /* width:100%; */
-    width: 270px;
-    padding:5px 12 px;
-    transition:.3s ease all;
-    border-radius:5px;
-}
-
+/* -----inputs----- */
 .ingreso_datos {
-   
-    max-width: 298px;
+    border:2px solid #c5c8e9;
+    height:40px;
     background:#c5c8e9;
     font-size: 0.9em;
-    padding: 0.2em;
+    font-weight: 6em;
     border-radius: 0.4em;
     color: #000000;
-    box-shadow: 0 0 8em rgb(72, 172, 238);
+    box-shadow: 0em 0em 8em 0.8em rgb(72, 172, 238);
+    padding: 0px 20px;
+    width:15em;
 
 }
 
-.estilo-button {
-    border-radius: 0.3em;
-    background:#f7f8fa;
-    font-size: 0.9em;
-    margin-top: 1em;
-    padding: 0.5em;
-}
-
-.validation_button {
+/* --------estilo de boton de validación ------ */
+.validation_button 
+    /* height:55px;
     width: 100%;
-    max-width: 170px;
-    margin: 0 20px 0 20px;
-}
+    max-width: 150px;
+    margin: 0px 19px 0 px;
+    border-radius: 0.5em;
+    border:1.5px solid #445ed4de;
+    font-size: 0.86em;
+    font-weight: 610;
+    background:#173f9c;
+    color: #ffffff;
+    transition-duration: 0.4s; */
+    {
+        background-color: #173f9c; /* blue */
+        border-radius: 0.5em;
+        border:1.5px solid rgb(72, 172, 238);
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+
+      }
+
 .validation_button:hover {
-    cursor: pointer;
+    background-color: rgb(72, 172, 238);
 }
 
 /* -----popUp para la ventana emergente de la validacion */
@@ -170,12 +193,66 @@ h1 {
     background: black;
 }
 
+/* -------footer------- */
 
-.grupo_contenido_formulario {
-    width: 298px;
-    display:flex;
+footer {
+    background:rgb(42, 78, 175);
+    height: auto;
+    padding-top: 40px;
+    color: #ffffff;
+
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.social {
+    list-style: none;
+    display:flex;
     align-items: center;
-    
+    justify-content: center;
+    margin: 0.5em 0 0.5em 0;
+}
+
+.social li{
+    margin: 0 10px;
+
+}
+.social a{
+    color:#ffffff;
+}
+
+.social a i{
+    font-size:1.8em;
+    transition: color .4s ease;
+}
+
+.social a:hover i{
+    color:#00c3ff;
+}
+
+.footer-bottom {
+    background-color: rgb(17, 43, 114);
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
 }
