@@ -21,14 +21,14 @@
   <!-- Cabecera donde va el navegador -->
     <header class="header">
       <div class="logo_nav_container">
-       <a href="href=#" class="logo">Logo de Ransa Perú</a>
-       <!-- El navegador -->
-       <nav class="enlaces_de_navegacion">
-         <ul>
+        <a href="href=#" class="logo">Logo de Ransa Perú</a>
+        <!-- El navegador -->
+        <nav class="enlaces_de_navegacion">
+          <ul>
             <li><a href="#" >Inicio</a></li>
             <li><a href="index.html" >Validación de tarjeta</a></li>
-         </ul> 
-       </nav>
+          </ul> 
+        </nav>
       </div>
     </header>
     <!-- Título del registro del formulario -->
@@ -44,7 +44,7 @@
               
               <div class="flexbox">
                 <div class="grupo-select">
-                  <!-- Código MM  -->
+                  <!- Código MM  -->
                   <!-- <label for="mm">MM</label><br><br>
 
                      <div class="grupo">
@@ -55,7 +55,7 @@
                      </div>
                 </div>
                 <div class="grupo-select">
-                  <!-- Código año  -->
+                  <!- Código año  -->
                   <!-- <label for="anio">Año</label><br><br>
 
                   <div class="grupo">
@@ -77,32 +77,40 @@
             
          <!-- </div>  --> 
          
-         <!-- Numero de Tarjeta -->
-          <div class="grupo_contenido_formulario">
-            <div class="grupo">
-              <label for="nombre_usuario">Usuario</label><br><br>
-              <input class="ingreso_datos" type="text" id="nombre_usuario" maxlength="19" name="nombre_usuario"   placeholder="Usuario"><br><br>
-            </div>
+          <!------- Formulario de ingreso de datos ------->
+          <div class="grupo_contenido_formulario" id="formulario">
 
-            <div class="grupo">
+            <!---------- Nombre de usuario ----------->
+            <div id="grupo_usuario">
+              <label for="nombre_usuario">Usuario</label><br><br>
+              <input class="ingreso_datos" type="text"  id="nombre_usuario" maxlength="19" name="nombre_usuario"   placeholder="Usuario"><br><br>
+            </div>
+            <div id="grupo__usuario"class="formulario_input-error">
+            <p>El usuario solo puede contener letras.</p></div>
+
+            <!---------- Numero de Tarjeta ----------->
+            <div  id="grupo_numero_tarjeta"> 
               <label for="numero_tarjeta">Número de Tarjeta</label><br><br>
               <input class="ingreso_datos" type="text" id="numero_tarjeta" maxlength ="16" autocomplete="off" name="numero_tarjeta" placeholder="Número de tarjeta"><br><br>
             </div>
+            <div id="grupo__numero_tarjeta"class="formulario_input-error">
+              <p>Solo puede contener numeros.</p></div>
+            
 
             <!-- Botón de ingresar y validar datos -->        
-            <input  type="submit" id="validation_button" class="validation_button" value="VALIDAR"><br><br>
+            <button  type="submit" id="validation_button" class="validation_button">VALIDAR</button><br><br>
          
           </div>
     </section >
-  
+    <!------- popup de validacion de tarjeta------>
     <div class="overlay" id="overlay">
       <div class="mostrar_validacion" id="mostrar_validacion">
-        <p id ="validacion">Validando..</p>
+        <p id ="validacion"></p>
         <input id="cerrar_con_btn_ok" type="sybmit" class="btn-submit" value="OK">        
       </div>      
     </div>
-     
-   <!-- Pie de página -->
+      
+   <!------- Pie de página-footer------>
     <footer >
       <div class="footer-content">
         <h3>Tienda Ransa</h3>
@@ -120,5 +128,6 @@
     </footer>
     <!-- enlace al script index.js -->
     <script src="index.js" type="module"></script>
+    
   </body>
 </html>

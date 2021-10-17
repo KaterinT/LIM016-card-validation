@@ -3,7 +3,7 @@
     padding:0;
 }
 
-/* ------------FONDO Y TEXTO DE TODO EL FORMULARIO ---------------- */
+/* ------------FONDO Y TEXTO DE TODO EL FORMULARIO --------------- */
 body {
     box-sizing: border-box;
     background: url(fondo_pagina_web.jpg) center top 50px;
@@ -26,25 +26,25 @@ header {
     text-decoration: none;
 }
 
-/* ---------POSICIÓN DE BOTONES DE LA CABECERA------ */
+/* ------------POSICIÓN DE BOTONES DE LA CABECERA------ */
 .logo_nav_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 }
-/* ----Quita el estilo tipo lista  ----*/
+/* ----------Quita el estilo tipo lista  ----------*/
 .enlaces_de_navegacion ul {
     list-style: none;
 
 }
-/* ---colocar un boton uno al lado del otro --- */
+/* ---colocar un boton uno al lado del otro ------ */
 .enlaces_de_navegacion ul li {
     display: inline-block;
 
 }
 
-/* ---estilo al seleccionar uno de los botones--- */
+/* ---estilo al seleccionar uno de los botones del header--- */
 .enlaces_de_navegacion ul li a {
 
     border-radius: 3px;
@@ -58,7 +58,7 @@ header {
 }
 
 
-/* ---------ESTILOS DEL FORMULARIO------ */
+/* ---------------ESTILOS DEL FORMULARIO------------------- */
 
 h1 {
     font-size: 24px;
@@ -100,7 +100,9 @@ h1 {
     font-size: 1.1em;
     font-weight: 610;
 }
-/* -----inputs----- */
+/* ---------------inputs---------------------- */
+
+
 .ingreso_datos {
     border:2px solid #c5c8e9;
     height:40px;
@@ -110,24 +112,28 @@ h1 {
     border-radius: 0.4em;
     color: #000000;
     box-shadow: 0em 0em 8em 0.8em rgb(72, 172, 238);
-    padding: 0px 20px;
+    padding: 0px 20px 0px 0px ;
     width:15em;
-
+    outline:none;
 }
 
+
+.formulario_input-error {
+    font-size: 12px;
+	margin-bottom: 15px;
+    padding: 0px;
+	display: none;
+    width:20em;
+    color: #ca2924;
+ 
+}
+
+.formulario_input-error-activo {
+	display: block;
+}
 /* --------estilo de boton de validación ------ */
 .validation_button 
-    /* height:55px;
-    width: 100%;
-    max-width: 150px;
-    margin: 0px 19px 0 px;
-    border-radius: 0.5em;
-    border:1.5px solid #445ed4de;
-    font-size: 0.86em;
-    font-weight: 610;
-    background:#173f9c;
-    color: #ffffff;
-    transition-duration: 0.4s; */
+
     {
         background-color: #173f9c; /* blue */
         border-radius: 0.5em;
@@ -146,7 +152,8 @@ h1 {
     background-color: rgb(72, 172, 238);
 }
 
-/* -----popUp para la ventana emergente de la validacion */
+/* -----------------POPUP PARA LA VENTANA EMERGENTE DE LA VALIDACIÓN--------------- */
+
 .overlay {
     background: rgba(0,0,0,.3);
     position: fixed;
@@ -181,7 +188,7 @@ h1 {
     line-height: 40px;
     border: none;
     color: #fff;
-    background: #5e6786;
+    background: rgb(42, 78, 175);
     border-radius: 3px;
     font-size: 16px;
     cursor: pointer;
@@ -190,12 +197,13 @@ h1 {
 }
 
 .btn-submit:hover {
-    background: black;
+    background: #00c3ff;;
 }
 
-/* -------footer------- */
+/* --------------------FOOTER------------------------- */
 
 footer {
+ 
     background:rgb(42, 78, 175);
     height: auto;
     padding-top: 40px;
@@ -249,10 +257,40 @@ footer {
 .social a:hover i{
     color:#00c3ff;
 }
-
+/* -------el copyright del footer ----- */
 .footer-bottom {
     background-color: rgb(17, 43, 114);
-    width: 100vw;
+    /* width: 100vw; */
     padding: 20px 0;
     text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: 0.4;
+    font-weight: 200;
+}
+/* ---PARA LA VALIDACION DE LOS INPUTS----- */
+
+.formulario_grupo_correcto label {
+    color: #1ed12d;
+    opacity:1;
+}
+
+.formulario_grupo_correcto .ingreso_datos {
+    border:2px solid #1ed12d; 
+    }
+
+
+.formulario_grupo_incorrecto label {
+    color: #df0808;
+
+}
+.formulario_grupo_incorrecto .ingreso_datos {
+    border:2px solid #ca2924; 
 }
