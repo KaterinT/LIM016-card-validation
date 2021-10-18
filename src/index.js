@@ -2,13 +2,16 @@ import validator from './validator.js';
 // -------constantes para validar los inputs de entrada si son letras o numeros----
 const inputs = document.querySelectorAll('#formulario input');
 const expresiones = {
-	usuario: /^[a-zA-Z]{0,16}$/, // Letras, numeros
+	usuario: /^[a-zA-Z]{0,12}$/, // Letras, numeros
 	numero_tarjeta: /^\d{0,16}$/ // 7 a 14 numeros.
 }
 // --------constantes para validar tarjeta--------- 
 const validation_button = document.getElementById("validation_button");
 const overlay = document.getElementById("overlay");
+const overlay2 = document.getElementById("overlay2");
 const cerrar_con_btn_ok = document.getElementById("cerrar_con_btn_ok");
+const cerrar_con_btn_ok2 = document.getElementById("cerrar_con_btn_ok2");
+
 // let  cvv = document.getElementById("cvv");
 // let  mm = document.getElementById("mm");
 // let  nombre_usuario = document.getElementById("nombre_usuario");
@@ -58,14 +61,17 @@ validation_button.addEventListener("click", e => {
   let  resultado = validator.isValid(creditCardNumber.value);
   let ocultar_datos=validator.maskify(creditCardNumber.value);
   
-  if (resultado === true){
+  if (resultado === true ){
 
     document.getElementById("validacion").innerHTML="Gracias validado! "+ocultar_datos;
     overlay.classList.add("active");
+
+
   }else{
 
-    document.getElementById("validacion").innerHTML="invalido! "+ocultar_datos;
-    overlay.classList.add("active");
+    document.getElementById("validacion2").innerHTML="Ups es invalido! "+ocultar_datos;
+    overlay2.classList.add("active");
+
   }
 
 })
@@ -73,7 +79,11 @@ validation_button.addEventListener("click", e => {
 cerrar_con_btn_ok.addEventListener("click", e => {
   e.preventDefault
    overlay.classList.remove("active");
-   
   
+})
+cerrar_con_btn_ok2.addEventListener("click", e => {
+  e.preventDefault
+   overlay2.classList.remove("active");
+   
 })
 // console.log(validator);

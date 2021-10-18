@@ -85,28 +85,46 @@
               <label for="nombre_usuario">Usuario</label><br><br>
               <input class="ingreso_datos" type="text"  id="nombre_usuario" maxlength="19" name="nombre_usuario"   placeholder="Usuario"><br><br>
             </div>
-            <div id="grupo__usuario"class="formulario_input-error">
-            <p>El usuario solo puede contener letras.</p></div>
+            <div id="grupo__usuario" class="formulario_input-error">
+              <p>El usuario solo puede contener letras.</p>
+            </div>
 
             <!---------- Numero de Tarjeta ----------->
-            <div  id="grupo_numero_tarjeta"> 
+            <div id="grupo_numero_tarjeta"> 
               <label for="numero_tarjeta">Número de Tarjeta</label><br><br>
               <input class="ingreso_datos" type="text" id="numero_tarjeta" maxlength ="16" autocomplete="off" name="numero_tarjeta" placeholder="Número de tarjeta"><br><br>
             </div>
-            <div id="grupo__numero_tarjeta"class="formulario_input-error">
-              <p>Solo puede contener numeros.</p></div>
+            <div id="grupo__numero_tarjeta" class="formulario_input-error">
+              <p>Solo puede contener numeros.</p>
+            </div>
             
 
             <!-- Botón de ingresar y validar datos -->        
             <button  type="submit" id="validation_button" class="validation_button">VALIDAR</button><br><br>
-         
           </div>
     </section >
-    <!------- popup de validacion de tarjeta------>
+    <!------- popup de validacion de tarjeta _cuando es valido_------>
     <div class="overlay" id="overlay">
+
       <div class="mostrar_validacion" id="mostrar_validacion">
-        <p id ="validacion"></p>
-        <input id="cerrar_con_btn_ok" type="sybmit" class="btn-submit" value="OK">        
+        <div class="icon" id="icon">
+          <i class="fa fa-check"></i>
+        </div>
+          <p class="validacion" id ="validacion"></p>
+          <input id="cerrar_con_btn_ok" type="sybmit" class="btn-submit" value="OK"> 
+       
+      </div>      
+    </div>
+    <!------- popup de validacion de tarjeta _cuando es invalido_------>
+    <div class="overlay2" id="overlay2">
+
+      <div class="mostrar_validacion" id="mostrar_validacion2">
+        <div class="icon2" id="icon2">
+          <i class="fa fa-times"></i>
+        </div>
+      
+        <p class="validacion" id ="validacion2"></p>
+        <input id="cerrar_con_btn_ok2" type="sybmit" class="btn-submit" value="OK">        
       </div>      
     </div>
       

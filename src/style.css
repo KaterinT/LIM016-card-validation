@@ -25,7 +25,6 @@ header {
     color: #00c3ff;
     text-decoration: none;
 }
-
 /* ------------POSICIÓN DE BOTONES DE LA CABECERA------ */
 .logo_nav_container {
     display: flex;
@@ -154,8 +153,22 @@ h1 {
 
 /* -----------------POPUP PARA LA VENTANA EMERGENTE DE LA VALIDACIÓN--------------- */
 
+/*----- texto que escribe que fue valido o invalido------  */
+.validacion {
+    margin:5px 0px;
+    font-size:24px;
+    font-weight:600;
+}
+/* ---boton de cerrar popup--- */
+.dismiss-btn {
+    margin-top:15px;
+}
+
+/* ----la caja completa de el popup en toda la ventana---- */
+
+/* ------overlay respuesta correcta----- */
 .overlay {
-    background: rgba(0,0,0,.3);
+    background: rgba(255, 209, 209, 0.3);
     position: fixed;
     top:0;
     bottom: 0;
@@ -165,13 +178,83 @@ h1 {
     align-items: center;
     justify-content: center;
     visibility:hidden;
+    transform:translate(0%,0%) scale(0.5);
+    transition: opacity 100ms ease-in-out,
+    transform 1000ms ease-in-out;
+
 }
 
 .overlay.active {
     visibility:visible;
+    opacity:1;
+    transform:translate(0%,0%) scale(1);
+    transition: transform 300ms cubic-bezier(0.18,0.89,0.43,1.19);
 
 }
 
+/* ------el icono de valido ---- */
+.icon {
+    margin:5px 0px;
+    width:50px;
+    height:50px;
+    border:2px solid #34f234;
+    text-align:center;
+    display:inline-block;
+    border-radius:50%;
+    line-height:60px;
+  
+  }
+  .icon i.fa {
+    font-size:30px;
+    color:#34f234;
+  } 
+
+  
+/* ----------overlay respuesta incorrecta-------- */
+
+.overlay2 {
+    background: rgba(255, 209, 209, 0.3);
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    visibility:hidden;
+    transform:translate(0%,0%) scale(0.5);
+    transition: opacity 100ms ease-in-out,
+    transform 1000ms ease-in-out;
+
+}
+
+.overlay2.active {
+    visibility:visible;
+    opacity:1;
+    transform:translate(0%,0%) scale(1);
+    transition: transform 300ms cubic-bezier(0.18,0.89,0.43,1.19);
+
+}
+
+/* ------el icono de invalido ---- */
+.icon2 {
+    margin:5px 0px;
+    width:50px;
+    height:50px;
+    border:2px solid #f24134;
+    text-align:center;
+    display:inline-block;
+    border-radius:50%;
+    line-height:60px;
+  
+  }
+  .icon2 i.fa {
+    font-size:30px;
+    color:#f24134;
+  } 
+
+/* -----solo la caja de validacion el área de su cuadrado ---- */
 .mostrar_validacion {
     background: #ffffff;
     box-shadow:0px 0px 5px 0px rgba(0,0, 0,0.3);
@@ -179,11 +262,14 @@ h1 {
     padding: 40px;
     text-align: center;
     width: 270px;
+    /* transition: all 300ms ease-in-out 350ms; */
+    
 
 }
 
+/* ---boton de OK en el popup ---- */
 .btn-submit {
-    padding: 0 20px;
+    /* padding: 0 20px;
     height: 40px;
     line-height: 40px;
     border: none;
@@ -193,11 +279,22 @@ h1 {
     font-size: 16px;
     cursor: pointer;
     transition: .3s ease all;
-    text-align: center;
+    text-align: center; */
+    padding:10px 20px;
+    background:#111;
+    color:#f5f5f5;
+    border:2px solid #111;
+    font-size:16px;
+    font-weight:600;
+    outline:none;
+    border-radius:10px;
+    cursor:pointer;
+    /* transition: all 300ms ease-in-out ; */
 }
 
 .btn-submit:hover {
-    background: #00c3ff;;
+    background: #104a5c;
+    /* transition: all 300ms ease-in-out ; */
 }
 
 /* --------------------FOOTER------------------------- */
