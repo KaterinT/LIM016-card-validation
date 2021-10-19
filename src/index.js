@@ -75,6 +75,7 @@ validation_button.addEventListener("click", e => {
 
         document.getElementById("validacion2").innerHTML="Ups! " + nombre_usuario.value + " tu compra no pudo ser completada ";
         document.getElementById("description2").innerHTML="Tu tarjeta N°: "+ ocultar_datos + " es inválida. "
+        document.getElementById("grupo_numero_tarjeta").classList.add("formulario_grupo_incorrecto");
         overlay2.classList.add("active");
 
       }
