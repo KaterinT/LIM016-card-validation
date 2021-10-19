@@ -58,23 +58,26 @@ validation_button.addEventListener("click", e => {
   let nombre_usuario = document.getElementById("nombre_usuario");
   let  creditCardNumber = document.getElementById("numero_tarjeta");
   let  resultado = validator.isValid(creditCardNumber.value);
-  let ocultar_datos=validator.maskify(creditCardNumber.value);
+  let ocultar_datos = validator.maskify(creditCardNumber.value);
+
 // ------no permite espacios vacios-------
   if (creditCardNumber.value == "" || nombre_usuario.value == ""){
-    alert("Ups!,algo salió mal. Completar el formulario para continuar");
+    alert("Ups!,algo salió mal. Completa el formulario para continuar");
   } else {
-    
-    if (resultado === true ){
 
-      document.getElementById("validacion").innerHTML="Gracias validado! "+ocultar_datos;
-      overlay.classList.add("active");
+      if (resultado === true ){
 
-    }else{
+        document.getElementById("validacion").innerHTML="Gracias por tu compra "+ nombre_usuario.value + "!";
+        document.getElementById("description").innerHTML="Tu tarjeta N°: "+ ocultar_datos + " a sido validada con éxito!"
+        overlay.classList.add("active");
 
-      document.getElementById("validacion2").innerHTML="Ups es invalido! "+ocultar_datos;
-      overlay2.classList.add("active");
+      }else{
 
-    }
+        document.getElementById("validacion2").innerHTML="Ups! " + nombre_usuario.value + " tu compra no pudo ser completada ";
+        document.getElementById("description2").innerHTML="Tu tarjeta N°: "+ ocultar_datos + " es inválida. "
+        overlay2.classList.add("active");
+
+      }
   }
 })
 

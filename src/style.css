@@ -25,6 +25,7 @@ header {
     color: #00c3ff;
     text-decoration: none;
 }
+
 /* ------------POSICIÓN DE BOTONES DE LA CABECERA------ */
 .logo_nav_container {
     display: flex;
@@ -45,8 +46,12 @@ header {
 /* -------------modificar diseño del logo---------------- */
 
 .logo {
-    font-size:1.2em;
-    color:#ffffff;
+    font-size:1.5em;
+    font-weight: 700;
+    background: linear-gradient(90deg,#007cf0,#00dfd8);
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip: text;
+
 }
 /* ---estilo al seleccionar uno de los botones del header--- */
 .enlaces_de_navegacion ul li a {
@@ -158,12 +163,20 @@ h1 {
 
 /* -----------------POPUP PARA LA VENTANA EMERGENTE DE LA VALIDACIÓN--------------- */
 
-/*----- texto que escribe que fue valido o invalido------  */
+/*----- texto que escribe que fue valido o invalido en negrita y más grande------  */
 .validacion {
     margin:5px 0px;
     font-size:24px;
     font-weight:600;
 }
+
+/* --------texto más descriptivo que indica que fue valido o invalido más pequeño  */
+.description {
+    color:#222;
+    font-size:15px;
+    padding:5px;
+  }
+  
 /* ---boton de cerrar popup--- */
 .dismiss-btn {
     margin-top:15px;
@@ -213,6 +226,7 @@ h1 {
     font-size:30px;
     color:#34f234;
   } 
+  
 
   
 /* ----------overlay respuesta incorrecta-------- */
@@ -283,22 +297,25 @@ h1 {
     border-radius: 3px;
     font-size: 16px;
     cursor: pointer;
-    transition: .3s ease all;
-    text-align: center; */
-    padding:10px 20px;
-    background:#111;
+    transition: .3s ease all;*/
+    text-align: center; 
+    padding:12px 13px;
+    background:#173f9c;
     color:#f5f5f5;
-    border:2px solid #111;
+    border:2px solid #0d2661;
     font-size:16px;
     font-weight:600;
     outline:none;
     border-radius:10px;
     cursor:pointer;
+    width: 4em;
+    margin-top: 0.6em;
+
     /* transition: all 300ms ease-in-out ; */
 }
 
 .btn-submit:hover {
-    background: #104a5c;
+    background: rgb(72, 172, 238);
     /* transition: all 300ms ease-in-out ; */
 }
 
@@ -326,6 +343,9 @@ footer {
     font-weight: 400;
     text-transform: capitalize;
     line-height: 3rem;
+    background: linear-gradient(90deg,#007cf0,#00dfd8);
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip: text;
 }
 
 .footer-content p{
@@ -377,7 +397,7 @@ footer {
     opacity: 0.4;
     font-weight: 200;
 }
-/* ---PARA LA VALIDACION DE LOS INPUTS----- */
+/* ---PARA LA VALIDACION DE LOS INPUTS,LOS COLORES DEL LABEL USUARIO ,NUMERO DE TARJETA Y BORDES DE INPUT----- */
 
 .formulario_grupo_correcto label {
     color: #1ed12d;
