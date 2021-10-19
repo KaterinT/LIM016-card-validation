@@ -1,5 +1,5 @@
 ## 1. Título del proyecto: 
-     "Tienda Ransa Perú"
+   "Tienda Ransa Perú"
 ## 2. El proyecto trata de una tienda E-commerce de nombre Tienda Ransa el cuál es una página cómoda, sencilla e intuitiva para el usuario que le permitirá poder validar su tarjeta de forma rápida y segura para de esta forma poder completar con éxitos su proceso de compra.
 ## 3.
 ## 4. Investigación UX:
