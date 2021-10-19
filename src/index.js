@@ -1,4 +1,5 @@
 import validator from './validator.js';
+
 // -------constantes para validar los inputs de entrada si son letras o numeros----
 const inputs = document.querySelectorAll('#formulario input');
 const expresiones = {
@@ -48,32 +49,33 @@ inputs.forEach ((input) => {
   input.addEventListener("keyup",validarFrom);
   input.addEventListener("blur",validarFrom);
 })
+
 // ----------------------VALIDACION DE TARJETA AL DAR CLICK-------------------------
 validation_button.addEventListener("click", e => {
   e.preventDefault
 
-  // ---Activar el popup---
-  // overlay.classList.add("active");
-
-  // -----Validando tarjeta ------
-
+  // -----Validando tarjeta ----------
+  let nombre_usuario = document.getElementById("nombre_usuario");
   let  creditCardNumber = document.getElementById("numero_tarjeta");
   let  resultado = validator.isValid(creditCardNumber.value);
   let ocultar_datos=validator.maskify(creditCardNumber.value);
-  
-  if (resultado === true ){
+// ------no permite espacios vacios-------
+  if (creditCardNumber.value == "" || nombre_usuario.value == ""){
+    alert("Ups!,algo salió mal. Completar el formulario para continuar");
+  } else {
+    
+    if (resultado === true ){
 
-    document.getElementById("validacion").innerHTML="Gracias validado! "+ocultar_datos;
-    overlay.classList.add("active");
+      document.getElementById("validacion").innerHTML="Gracias validado! "+ocultar_datos;
+      overlay.classList.add("active");
 
+    }else{
 
-  }else{
+      document.getElementById("validacion2").innerHTML="Ups es invalido! "+ocultar_datos;
+      overlay2.classList.add("active");
 
-    document.getElementById("validacion2").innerHTML="Ups es invalido! "+ocultar_datos;
-    overlay2.classList.add("active");
-
+    }
   }
-
 })
 
 cerrar_con_btn_ok.addEventListener("click", e => {
