@@ -1,294 +1,249 @@
-*{
-    margin:0;
-    padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 /* ------------FONDO Y TEXTO DE TODO EL FORMULARIO --------------- */
 body {
-    box-sizing: border-box;
-    background: url(fondo_pagina_web.jpg) center top 50px;
-    background-size: 100%;
-    /* No se repita la imagen  */
-    background-repeat: no-repeat;
-    font-family: 'Noto Sans', sans-serif;
-
+  box-sizing: border-box;
+  background: url(fondo_pagina_web.jpg) center top 50px;
+  background-size: 100%;
+  /* No se repita la imagen  */
+  background-repeat: no-repeat;
+  font-family: "Noto Sans", sans-serif;
 }
 
 /* -----------COLOR DE CABECERA Y PADDING--------- */
 header {
-    background: #173f9c;
-    padding: 20px ;
+  background: #173f9c;
+  padding: 20px;
 }
 
 /* ----- LETRAS DE CABECERA---- */
 .header a {
-    color: #00c3ff;
-    text-decoration: none;
+  color: #00c3ff;
+  text-decoration: none;
 }
 
 /* ------------POSICIÓN DE BOTONES DE LA CABECERA------ */
 .logo_nav_container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 /* ----------Quita el estilo tipo lista  ----------*/
 .enlaces_de_navegacion ul {
-    list-style: none;
-
+  list-style: none;
 }
 /* ---colocar un boton uno al lado del otro ------ */
 .enlaces_de_navegacion ul li {
-    display: inline-block;
-
+  display: inline-block;
 }
 /* -------------modificar diseño del logo---------------- */
 
 .logo {
-    font-size:1.5em;
-    font-weight: 700;
-    background: linear-gradient(90deg,#007cf0,#00dfd8);
-    -webkit-text-fill-color:transparent;
-    -webkit-background-clip: text;
-
+  font-size: 1.5em;
+  font-weight: 700;
+  background: linear-gradient(90deg, #007cf0, #00dfd8);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 /* ---estilo al seleccionar uno de los botones del header--- */
 .enlaces_de_navegacion ul li a {
-
-    border-radius: 3px;
-    padding: 9px;
-
-  }
-
-.enlaces_de_navegacion ul li a:hover {
-    background-color: #477ebd;
-
+  border-radius: 3px;
+  padding: 9px;
 }
 
+.enlaces_de_navegacion ul li a:hover {
+  background-color: #477ebd;
+}
 
 /* ---------------ESTILOS DEL FORMULARIO------------------- */
 
 h1 {
-    font-size: 24px;
-    margin-bottom: 30px;
-    color: #173f9c;
-    
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #173f9c;
 }
 /* -------- caja que cubre todo el formulario--------- */
 #registro_de_formulario {
-    
-    background: #ffffff;
-    width: 21.5%;
-    padding: 2.8em;
-    /* margin:auto; */
-    /* margin: 20px 0px 30px 550px; */
-    margin: 4% 0% 6% 64%;
-    /* margin-top: 1.7em;
+  background: #ffffff;
+  width: 21.5%;
+  padding: 2.8em;
+  /* margin:auto; */
+  /* margin: 20px 0px 30px 550px; */
+  margin: 4% 0% 6% 64%;
+  /* margin-top: 1.7em;
     margin-right: 30%;
     margin-left: 64%; */
-    text-align: left;
-    border-radius: 0.6em;
-    box-shadow: 0 0 20em rgb(42, 78, 175);
-    
-
+  text-align: left;
+  border-radius: 0.6em;
+  box-shadow: 0 0 20em rgb(42, 78, 175);
 }
 /* ------caja de los elementos del formulario------ */
 .grupo_contenido_formulario {
-    width: 100%;
-    display:flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-
-    
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 /* -------titulo de los inputs el label------- */
 .registro_de_formulario label {
-    color:#173f9c;
-    font-size: 1.1em;
-    font-weight: 610;
+  color: #173f9c;
+  font-size: 1.1em;
+  font-weight: 610;
 }
 /* ---------------inputs---------------------- */
 
-
 .ingreso_datos {
-    border:2px solid #c5c8e9;
-    height:40px;
-    background:#c5c8e9;
-    font-size: 0.9em;
-    font-weight: 6em;
-    border-radius: 0.4em;
-    color: #000000;
-    box-shadow: 0em 0em 8em 0.8em rgb(72, 172, 238);
-    padding: 0px 20px 0px 0px ;
-    width:15em;
-    outline:none;
+  border: 2px solid #c5c8e9;
+  height: 40px;
+  background: #c5c8e9;
+  font-size: 0.9em;
+  font-weight: 6em;
+  border-radius: 0.4em;
+  color: #000000;
+  box-shadow: 0em 0em 8em 0.8em rgb(72, 172, 238);
+  padding: 0px 20px 0px 0px;
+  width: 15em;
+  outline: none;
 }
 
-
-.formulario_input-error {
-    font-size: 12px;
-	margin-bottom: 15px;
-    padding: 0px;
-	display: none;
-    width:20em;
-    color: #ca2924;
- 
-}
-
-.formulario_input-error-activo {
-	display: block;
-}
 /* --------estilo de boton de validación ------ */
-.validation_button 
-
-    {
-        background-color: #173f9c; /* blue */
-        border-radius: 0.5em;
-        border:1.5px solid rgb(72, 172, 238);
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        cursor: pointer;
-
-      }
+.validation_button {
+  background-color: #173f9c; /* blue */
+  border-radius: 0.5em;
+  border: 1.5px solid rgb(72, 172, 238);
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
 
 .validation_button:hover {
-    background-color: rgb(72, 172, 238);
+  background-color: rgb(72, 172, 238);
 }
 
 /* -----------------POPUP PARA LA VENTANA EMERGENTE DE LA VALIDACIÓN--------------- */
 
 /*----- texto que escribe que fue valido o invalido en negrita y más grande------  */
 .validacion {
-    margin:5px 0px;
-    font-size:24px;
-    font-weight:600;
+  margin: 5px 0px;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 /* --------texto más descriptivo que indica que fue valido o invalido más pequeño  */
 .description {
-    color:#222;
-    font-size:15px;
-    padding:5px;
-  }
-  
+  color: #222;
+  font-size: 15px;
+  padding: 5px;
+}
+
 /* ---boton de cerrar popup--- */
 .dismiss-btn {
-    margin-top:15px;
+  margin-top: 15px;
 }
 
 /* ----la caja completa de el popup en toda la ventana---- */
 
 /* ------overlay respuesta correcta----- */
 .overlay {
-    background: rgba(255, 209, 209, 0.3);
-    position: fixed;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right:0;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    visibility:hidden;
-    transform:translate(0%,0%) scale(0.5);
-    transition: opacity 100ms ease-in-out,
-    transform 1000ms ease-in-out;
-
+  background: rgba(255, 209, 209, 0.3);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  transform: translate(0%, 0%) scale(0.5);
+  transition: opacity 100ms ease-in-out, transform 1000ms ease-in-out;
 }
 
 .overlay.active {
-    visibility:visible;
-    opacity:1;
-    transform:translate(0%,0%) scale(1);
-    transition: transform 300ms cubic-bezier(0.18,0.89,0.43,1.19);
-
+  visibility: visible;
+  opacity: 1;
+  transform: translate(0%, 0%) scale(1);
+  transition: transform 300ms cubic-bezier(0.18, 0.89, 0.43, 1.19);
 }
 
 /* ------el icono de valido ---- */
 .icon {
-    margin:5px 0px;
-    width:50px;
-    height:50px;
-    border:2px solid #34f234;
-    text-align:center;
-    display:inline-block;
-    border-radius:50%;
-    line-height:60px;
-  
-  }
-  .icon i.fa {
-    font-size:30px;
-    color:#34f234;
-  } 
-  
+  margin: 5px 0px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #34f234;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+  line-height: 60px;
+}
+.icon i.fa {
+  font-size: 30px;
+  color: #34f234;
+}
 
-  
 /* ----------overlay respuesta incorrecta-------- */
 
 .overlay2 {
-    background: rgba(255, 209, 209, 0.3);
-    position: fixed;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right:0;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    visibility:hidden;
-    transform:translate(0%,0%) scale(0.5);
-    transition: opacity 100ms ease-in-out,
-    transform 1000ms ease-in-out;
-
+  background: rgba(255, 209, 209, 0.3);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  transform: translate(0%, 0%) scale(0.5);
+  transition: opacity 100ms ease-in-out, transform 1000ms ease-in-out;
 }
 
 .overlay2.active {
-    visibility:visible;
-    opacity:1;
-    transform:translate(0%,0%) scale(1);
-    transition: transform 300ms cubic-bezier(0.18,0.89,0.43,1.19);
-
+  visibility: visible;
+  opacity: 1;
+  transform: translate(0%, 0%) scale(1);
+  transition: transform 300ms cubic-bezier(0.18, 0.89, 0.43, 1.19);
 }
 
 /* ------el icono de invalido ---- */
 .icon2 {
-    margin:5px 0px;
-    width:50px;
-    height:50px;
-    border:2px solid #f24134;
-    text-align:center;
-    display:inline-block;
-    border-radius:50%;
-    line-height:60px;
-  
-  }
-  .icon2 i.fa {
-    font-size:30px;
-    color:#f24134;
-  } 
+  margin: 5px 0px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #f24134;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+  line-height: 60px;
+}
+.icon2 i.fa {
+  font-size: 30px;
+  color: #f24134;
+}
 
 /* -----solo la caja de validacion el área de su cuadrado ---- */
 .mostrar_validacion {
-    background: #ffffff;
-    box-shadow:0px 0px 5px 0px rgba(0,0, 0,0.3);
-    border-radius: 10px;
-    padding: 40px;
-    text-align: center;
-    width: 270px;
-    /* transition: all 300ms ease-in-out 350ms; */
-    
-
+  background: #ffffff;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 40px;
+  text-align: center;
+  width: 270px;
+  /* transition: all 300ms ease-in-out 350ms; */
 }
 
 /* ---boton de OK en el popup ---- */
 .btn-submit {
-    /* padding: 0 20px;
+  /* padding: 0 20px;
     height: 40px;
     line-height: 40px;
     border: none;
@@ -298,121 +253,130 @@ h1 {
     font-size: 16px;
     cursor: pointer;
     transition: .3s ease all;*/
-    text-align: center; 
-    padding:12px 13px;
-    background:#173f9c;
-    color:#f5f5f5;
-    border:2px solid #0d2661;
-    font-size:16px;
-    font-weight:600;
-    outline:none;
-    border-radius:10px;
-    cursor:pointer;
-    width: 4em;
-    margin-top: 0.6em;
+  text-align: center;
+  padding: 12px 13px;
+  background: #173f9c;
+  color: #f5f5f5;
+  border: 2px solid #0d2661;
+  font-size: 16px;
+  font-weight: 600;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 4em;
+  margin-top: 0.6em;
 
-    /* transition: all 300ms ease-in-out ; */
+  /* transition: all 300ms ease-in-out ; */
 }
 
 .btn-submit:hover {
-    background: rgb(72, 172, 238);
-    /* transition: all 300ms ease-in-out ; */
+  background: rgb(72, 172, 238);
+  /* transition: all 300ms ease-in-out ; */
 }
 
 /* --------------------FOOTER------------------------- */
 
 footer {
- 
-    background:rgb(42, 78, 175);
-    height: auto;
-    padding-top: 40px;
-    color: #ffffff;
-
+  background: rgb(42, 78, 175);
+  height: auto;
+  padding-top: 40px;
+  color: #ffffff;
 }
 
-.footer-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .footer-content h3 {
-    font-size: 1.8rem;
-    font-weight: 400;
-    text-transform: capitalize;
-    line-height: 3rem;
-    background: linear-gradient(90deg,#007cf0,#00dfd8);
-    -webkit-text-fill-color:transparent;
-    -webkit-background-clip: text;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+  background: linear-gradient(90deg, #007cf0, #00dfd8);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
-.footer-content p{
-    max-width: 500px;
-    margin: 10px auto;
-    line-height: 28px;
-    font-size: 14px;
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
 }
 
 .social {
-    list-style: none;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0.5em 0 0.5em 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5em 0 0.5em 0;
 }
 
-.social li{
-    margin: 0 10px;
-
+.social li {
+  margin: 0 10px;
 }
-.social a{
-    color:#ffffff;
-}
-
-.social a i{
-    font-size:1.8em;
-    transition: color .4s ease;
+.social a {
+  color: #ffffff;
 }
 
-.social a:hover i{
-    color:#00c3ff;
+.social a i {
+  font-size: 1.8em;
+  transition: color 0.4s ease;
+}
+
+.social a:hover i {
+  color: #00c3ff;
 }
 /* -------el copyright del footer ----- */
 .footer-bottom {
-    background-color: rgb(17, 43, 114);
-    /* width: 100vw; */
-    padding: 20px 0;
-    text-align: center;
+  background-color: rgb(17, 43, 114);
+  /* width: 100vw; */
+  padding: 20px 0;
+  text-align: center;
 }
 
-.footer-bottom p{
-    font-size: 14px;
-    word-spacing: 2px;
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
 }
 
-.footer-bottom span{
-    text-transform: uppercase;
-    opacity: 0.4;
-    font-weight: 200;
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.4;
+  font-weight: 200;
 }
 /* ---PARA LA VALIDACION DE LOS INPUTS,LOS COLORES DEL LABEL USUARIO ,NUMERO DE TARJETA Y BORDES DE INPUT----- */
 
 .formulario_grupo_correcto label {
-    color: #1ed12d;
-    opacity:1;
+  color: #1ed12d;
+  opacity: 1;
 }
 
 .formulario_grupo_correcto .ingreso_datos {
-    border:2px solid #1ed12d; 
-    }
-
+  border: 2px solid #1ed12d;
+}
 
 .formulario_grupo_incorrecto label {
-    color: #df0808;
-
+  color: #df0808;
 }
 .formulario_grupo_incorrecto .ingreso_datos {
-    border:2px solid #ca2924; 
+  border: 2px solid #ca2924;
+}
+
+/* -------------mensaje de error del input, abajo del input ----------------- */
+.formulario_input-error {
+  font-size: 12px;
+  margin-bottom: 15px;
+  padding: 0px;
+  display: none;
+  width: 20em;
+  color: #ca2924;
+}
+
+.formulario_input-error-activo {
+  display: block;
 }
