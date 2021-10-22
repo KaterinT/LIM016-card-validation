@@ -2,9 +2,9 @@ import validator from './validator.js';
 
 // -------constantes para validar los inputs de entrada si son letras o numeros----
 const inputs = document.querySelectorAll('#formulario input');
-const expresiones = {
+let expresiones = {
 	usuario: /^[a-zA-Z]{0,12}$/, // Letras
-	numero_tarjeta: /^\d{0,16}$/ // 7 a 14 numeros.
+	numero_tarjeta: /^\d{0,16}$/ // 0 a 16 numeros.
 }
 // --------constantes para validar tarjeta--------- 
 const validation_button = document.getElementById("validation_button");
