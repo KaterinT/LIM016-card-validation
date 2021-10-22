@@ -6,6 +6,8 @@ El proyecto trata de una tienda E-commerce la cuál es una página cómoda, senc
 
 ![Proyecto Final tienda Ransa ](imagen_proyecto_final.PNG)
 
+![Proyecto Final tienda Ransa _popup](imagen_proyecto_final2.PNG)
+
 
 
 ## Investigación UX:
