@@ -7,7 +7,7 @@ El proyecto trata de una tienda E-commerce el cuál es una página cómoda, senc
 
    El objetivo del usuario es completar su proceso de compra por medio de la validación de su tarjeta y su información de usuario.
    
-  ![](primer_prototipo.png)
+<img src="primer_prototipo.png" alt="mi primer prototipo"/>
 
 # Tarjeta de crédito válida
 
