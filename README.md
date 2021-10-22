@@ -1,12 +1,19 @@
 ## Título del proyecto: "Tienda Ransa Perú"
    
-El proyecto trata de una tienda E-commerce el cuál es una página cómoda, sencilla e intuitiva para el usuario que le permitirá poder validar su tarjeta de forma rápida y segura para de esta forma poder completar con éxitos su proceso de compra.
+El proyecto trata de una tienda E-commerce la cuál es una página cómoda, sencilla e intuitiva que le permitirá al usuario poder completar con éxitos su proceso de compra validando su tarjeta de forma rápida y segura .
+
+## Imagen del Proyecto Final:
+
+![Proyecto Final tienda Ransa ](/src/imagen_proyecto_final.PNG)
+
+
 
 ## Investigación UX:
-   Los principales usuarios del producto son aquellos clientes que deseen realizar compras de productos tecnológicos de forma online y deseen en finalizar su proceso de    compra.
+   Los principales usuarios del producto son aquellos clientes que deseen completar su proceso de compra en la Tienda Ransa mediante la validación de su tarjeta.
 
-   El objetivo del usuario es completar su proceso de compra por medio de la validación de su tarjeta y su información de usuario.
-
+   El objetivo del usuario es completar su proceso de compra por medio de la validación de su tarjeta y su dato de usuario.
+   
+   El proyecto 
 ![Tienda Ransa primer prototipo](primer_prototipo.PNG)
 
 # Tarjeta de crédito válida
