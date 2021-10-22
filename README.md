@@ -6,8 +6,8 @@ El proyecto trata de una tienda E-commerce el cuál es una página cómoda, senc
    Los principales usuarios del producto son aquellos clientes que deseen realizar compras de productos tecnológicos de forma online y deseen en finalizar su proceso de    compra.
 
    El objetivo del usuario es completar su proceso de compra por medio de la validación de su tarjeta y su información de usuario.
-   
-<img src="LIM016-card-validation/primer_prototipo.png" alt="mi primer prototipo"/>
+
+![Tienda Ransa primer prototipo](primer_prototipo.PNG)
 
 # Tarjeta de crédito válida
 
