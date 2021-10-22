@@ -4,7 +4,7 @@ El proyecto trata de una tienda E-commerce la cuál es una página cómoda, senc
 
 ## Imagen del Proyecto Final:
 
-![Proyecto Final tienda Ransa ](/src/imagen_proyecto_final.PNG)
+![Proyecto Final tienda Ransa ](imagen_proyecto_final.PNG)
 
 
 
