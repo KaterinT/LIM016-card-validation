@@ -92,27 +92,7 @@
             <!---------- Numero de Tarjeta ----------->
             <div id="grupo_numero_tarjeta"> 
               <label for="numero_tarjeta">Número de Tarjeta</label><br><br>
-              <input class="ingreso_datos" type="text" id="numero_tarjeta" maxlength ="16" autocomplete="off" name="numero_tarjeta" placeholder="Número de tarjeta" onkeypress="return solonumeros(event)" onpaste="return false" ><br><br>
-              <!-- ---------------------------RECIBA SOLO NUMEROS EN EL INPUT DE LA TARJETA-------------  -->
-              <script>
-              function solonumeros(e) {
-                let key = e.key.Code || e.which;
-                let teclado = String.fromCharCode(key);
-                let numeros = "0123456789";
-                let especiales = "8-37-38-46";
-                let teclado_especial = false;
-              
-                for(var i in especiales) {
-                  if(key==especiales[i]) {
-                    teclado_especial = true;
-                  }
-                }
-              
-                if (numeros.indexOf(teclado)==-1 && !teclado_especial) {
-                  return false;
-                }
-              }
-            </script>
+              <input class="ingreso_datos" type="text" id="numero_tarjeta" maxlength ="16" autocomplete="off" name="numero_tarjeta" placeholder="Número de tarjeta" onkeypress='return event.charCode >= 48 && event.charCode <= 57' onpaste="return false" ><br><br>
             </div>
             <div id="grupo__numero_tarjeta" class="formulario_input-error">
               <p>Solo puede contener numeros.</p>

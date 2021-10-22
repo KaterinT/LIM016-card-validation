@@ -17,6 +17,18 @@ const cerrar_con_btn_ok2 = document.getElementById("cerrar_con_btn_ok2");
 // let  mm = document.getElementById("mm");
 // let  nombre_usuario = document.getElementById("nombre_usuario");
 
+
+
+// ----------------RECIBA SOLO NUMEROS EN EL INPUT DE LA TARJETA--------------
+let  creditCardNumber_ = document.getElementById("numero_tarjeta");
+
+creditCardNumber_.addEventListener("click",function validaNumericos(event) {
+  if(event.charCode >= 48 && event.charCode <= 57){
+    return true;
+   }
+   return false;        
+})
+
 // -------------VALIDANDO DATOS DE LOS INPUT A COMPLETAR con colores y letras de aviso----------------
 
 const validarFrom = (e)=> {
