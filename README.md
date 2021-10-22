@@ -32,7 +32,7 @@ Desde el inicio del proyecto recibí feedback tanto de mis compañeras como de m
 
 https://www.figma.com/file/pldxA6kEdaB9lQ1dgdtrMc/Untitled?node-id=0%3A1G)
 
-## Link de GitHub Page donde podrás ver mi proyecto:
+## Link de GitHub Pages donde podrás ver mi proyecto:
 
 https://katerint.github.io/LIM016-card-validation/src/
 
