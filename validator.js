@@ -3,6 +3,7 @@ const validator = {
 
   isValid: (creditCardNumber) => {
 
+
     let suma=0;
      //Array del numero de la tarjeta en orden invertido
     let arrayNumTarjeta= creditCardNumber.toString().split("").reverse();
@@ -28,12 +29,12 @@ const validator = {
   //ocultando caracteres de la tarjeta 
   , maskify: (creditCardNumber) => {
 
-      let resultados ="";
-      for(let i=0; i<creditCardNumber.length; i++ ){
-          if(i<=creditCardNumber.length-5){
-              resultados+="#";
+      let resultados = "";
+      for(let i = 0; i < creditCardNumber.length; i++ ){
+          if(i <= creditCardNumber.length-5){
+              resultados += "#";
           }else {
-              resultados+=creditCardNumber[i];
+              resultados += creditCardNumber[i];
           }
       }
     
